@@ -54,7 +54,16 @@ body .wrong{
     border-color: red;
 }
 
-.start-btn, .next-btn{
+.btn.correct{
+    --hue: var(var(--hue-correct));
+    color: black;
+}
+.btn.wrong{
+    --hue: var(var(--hue-wrong));
+}
+
+.start-btn,
+.next-btn{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;

@@ -1,12 +1,12 @@
-const startButton =document.getElementById(start-btn)
-const nexttButton =document.getElementById(next-btn)
+const startButton =document.getElementById('start-btn')
+const nexttButton =document.getElementById('next-btn')
 
-const questionContainerElement = document.getElementById(question-container)
-const questionElement = document.getElementById(question)
-const answerButtonsElement = document.getElementById(answer-buttons)
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions,currentQuestionIndex;
-let quitScore = 0;
+let quitScore =0;
 
 
 startButton.addEventListener('click',startGame)
@@ -80,9 +80,9 @@ function selectAnswer(e){
 function setStatusClass(element,correct){
     clearStatusClass(element)
     if(correct){
-        element.classList.add('correct')
+        element.classList.add("correct")
     }else {
-        element.classList.add('wrong')
+        element.classList.add("wrong")
     }
 }
 
