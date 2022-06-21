@@ -13,7 +13,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue) 100%, 20%);
+    background-color: tomato;
 }
 
 body .correct{
@@ -30,4 +30,43 @@ body .wrong{
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn{
+    --hue :var(--hue-neutral);
+    border: 1px solid hsl(var(--hue) 100%, 30%);
+    background-color: lightcoral;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-color: red;
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
 }
